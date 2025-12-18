@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\0f2cbd4c02f80301e95c9493a383ddc5\oatpp-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\1aa30c21a4e035ac494e2c06f7e4d6b6\oatpp-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\3fcc781ee6f6a81ae6edbbcdb9a38b37\oatpp-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="F:\Code\Library\build\_deps\oatpp-subbuild\CMakeFiles\oatpp-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FF6B3DA3-388A-3952-9D78-096EF9477FBE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

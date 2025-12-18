@@ -1,0 +1,152 @@
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/tmp/oatpp-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-DOWNLOAD.RULE
+setlocal
+cd F:\Code\Library\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/download-oatpp-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/verify-oatpp-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/extract-oatpp-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-CONFIGURE.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-BUILD.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-INSTALL.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\0F2CBD4C02F80301E95C9493A383DDC5\OATPP-POPULATE-TEST.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\1AA30C21A4E035AC494E2C06F7E4D6B6\OATPP-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Code/Library/build/_deps/oatpp-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/CMakeFiles/Debug/oatpp-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp-subbuild/oatpp-populate-prefix/src/oatpp-populate-stamp/Debug/oatpp-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKEFILES\3FCC781EE6F6A81AE6EDBBCDB9A38B37\OATPP-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Code/Library/build/_deps/oatpp-subbuild -BF:/Code/Library/build/_deps/oatpp-subbuild --check-stamp-file F:/Code/Library/build/_deps/oatpp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

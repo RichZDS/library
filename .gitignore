@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# 编译输出
+*.exe
+*.o
+*.obj
+*.dll
+*.lib
+
+# IDE
+.vs/
+.vscode/
+*.suo
+*.user
+
+# 临时文件
+*.tmp
+*.log
+

@@ -1,0 +1,104 @@
+#pragma once
+#include "oatpp/core/macro/codegen.hpp"
+#include "oatpp/web/server/api/ApiController.hpp"
+#include "BookDto.hpp"
+#include "BookService.hpp"
+#include <fstream>
+
+#include OATPP_CODEGEN_BEGIN(ApiController)
+
+class BookController : public oatpp::web::server::api::ApiController {
+private:
+  BookService m_service;
+public:
+  BookController(const std::shared_ptr<ObjectMapper>& objectMapper)
+    : ApiController(objectMapper) {}
+
+  ENDPOINT("GET", "/books", listBooks) {
+    auto arr = oatpp::Vector<Object<BookDto>>::createShared();
+    for (auto& b : m_service.listAll()) {
+      auto dto = BookDto::createShared();
+      dto->id = b.id.c_str();
+      dto->title = b.title.c_str();
+      dto->author = b.author.c_str();
+      dto->publisher = b.publisher.c_str();
+      dto->price = b.price;
+      dto->totalCopies = b.totalCopies;
+      dto->availableCopies = b.availableCopies;
+      arr->push_back(dto);
+    }
+    return createDtoResponse(Status::CODE_200, arr);
+  }
+
+  ENDPOINT("GET", "/", index) {
+    std::ifstream in("webroot/index.html", std::ios::binary);
+    if (!in) return createResponse(Status::CODE_404, "index.html not found");
+    std::string html((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    auto resp = ResponseFactory::createResponse(Status::CODE_200, html.c_str());
+    resp->putHeader("Content-Type", "text/html; charset=utf-8");
+    return resp;
+  }
+
+  ENDPOINT("GET", "/style.css", style) {
+    std::ifstream in("webroot/style.css", std::ios::binary);
+    if (!in) return createResponse(Status::CODE_404, "style.css not found");
+    std::string css((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    auto resp = ResponseFactory::createResponse(Status::CODE_200, css.c_str());
+    resp->putHeader("Content-Type", "text/css; charset=utf-8");
+    return resp;
+  }
+
+  ENDPOINT("GET", "/app.js", script) {
+    std::ifstream in("webroot/app.js", std::ios::binary);
+    if (!in) return createResponse(Status::CODE_404, "app.js not found");
+    std::string js((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    auto resp = ResponseFactory::createResponse(Status::CODE_200, js.c_str());
+    resp->putHeader("Content-Type", "application/javascript; charset=utf-8");
+    return resp;
+  }
+
+  ENDPOINT("GET", "/books/{id}", getBook, PATH(String, id)) {
+    auto rec = m_service.getById(id);
+    if (!rec) return createResponse(Status::CODE_404, "Not Found");
+    auto dto = BookDto::createShared();
+    dto->id = rec->id.c_str();
+    dto->title = rec->title.c_str();
+    dto->author = rec->author.c_str();
+    dto->publisher = rec->publisher.c_str();
+    dto->price = rec->price;
+    dto->totalCopies = rec->totalCopies;
+    dto->availableCopies = rec->availableCopies;
+    return createDtoResponse(Status::CODE_200, dto);
+  }
+
+  ENDPOINT("POST", "/books", createBook,
+           BODY_DTO(Object<BookDto>, dto)) {
+    Book b;
+    b.id = dto->id ? std::string(dto->id->c_str()) : "";
+    b.title = dto->title ? std::string(dto->title->c_str()) : "";
+    b.author = dto->author ? std::string(dto->author->c_str()) : "";
+    b.publisher = dto->publisher ? std::string(dto->publisher->c_str()) : "";
+    b.price = dto->price;
+    b.totalCopies = dto->totalCopies;
+    b.availableCopies = dto->availableCopies;
+    m_service.addOrAcquire(b);
+    return createResponse(Status::CODE_201, "Created");
+  }
+
+  ENDPOINT("DELETE", "/books/{id}", deleteBook, PATH(String, id)) {
+    if (m_service.removeById(id)) return createResponse(Status::CODE_200, "Deleted");
+    return createResponse(Status::CODE_404, "Not Found");
+  }
+
+  ENDPOINT("PUT", "/books/{id}/borrow", borrow, PATH(String, id)) {
+    if (m_service.borrow(id)) return createResponse(Status::CODE_200, "OK");
+    return createResponse(Status::CODE_400, "Fail");
+  }
+
+  ENDPOINT("PUT", "/books/{id}/return", giveback, PATH(String, id)) {
+    if (m_service.giveback(id)) return createResponse(Status::CODE_200, "OK");
+    return createResponse(Status::CODE_400, "Fail");
+  }
+};
+
+#include OATPP_CODEGEN_END(ApiController)

@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\AllTestsMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\async\LockTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\base\CommandLineArgumentsTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\base\LoggerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\buffer\ProcessorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\AnyTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\EnumTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\InterpretationTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ListTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ObjectTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ObjectWrapperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\PairListTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\PrimitiveTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\StringTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\TypeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\UnorderedMapTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\UnorderedSetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\VectorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\TypeResolverTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\resource\InMemoryDataTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\LazyStringMapTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\MemoryLabelTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\StringTemplateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\stream\BufferStreamTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\parser\CaretTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\provider\PoolTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\provider\PoolTemplateTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\encoding\Base64Test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\encoding\UnicodeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\monitor\ConnectionMonitorTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\virtual_\InterfaceTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\virtual_\PipeTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\ConnectionPoolTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\UrlTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DTOMapperPerfTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DTOMapperTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DeserializerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\EnumTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\UnorderedSetTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\protocol\http\encoding\ChunkedTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\mime\multipart\StatefulParserTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\api\ApiControllerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\handler\AuthorizationHandlerTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\HttpRouterTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\ServerStopTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\ClientRetryTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\PipelineTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\PipelineAsyncTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullAsyncTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullAsyncClientTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\async\LockTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\base\CommandLineArgumentsTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\base\LoggerTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\buffer\ProcessorTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\AnyTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\EnumTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\InterpretationTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ListTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ObjectTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\ObjectWrapperTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\PairListTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\PrimitiveTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\StringTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\TypeTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\UnorderedMapTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\UnorderedSetTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\type\VectorTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\mapping\TypeResolverTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\resource\InMemoryDataTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\LazyStringMapTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\MemoryLabelTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\share\StringTemplateTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\data\stream\BufferStreamTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\parser\CaretTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\provider\PoolTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\core\provider\PoolTemplateTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\encoding\Base64Test.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\encoding\UnicodeTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\monitor\ConnectionMonitorTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\virtual_\InterfaceTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\virtual_\PipeTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\ConnectionPoolTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\network\UrlTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DTOMapperPerfTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DTOMapperTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\DeserializerTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\EnumTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\parser\json\mapping\UnorderedSetTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\protocol\http\encoding\ChunkedTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\mime\multipart\StatefulParserTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\api\ApiControllerTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\handler\AuthorizationHandlerTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\HttpRouterTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\server\ServerStopTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\ClientRetryTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\PipelineTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\PipelineAsyncTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullAsyncTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\FullAsyncClientTest.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\Client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\BearerAuthorizationController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\BasicAuthorizationController.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\Controller.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\ControllerAsync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\DTOs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\ControllerWithInterceptors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Code\Library\build\_deps\oatpp-src\test\oatpp\web\app\ControllerWithInterceptorsAsync.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Code\Library\build\_deps\oatpp-src\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A8385937-245D-3724-8D71-D94049EF8E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{964B8C98-8F76-3A2C-9B0B-52A0121D2AB7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

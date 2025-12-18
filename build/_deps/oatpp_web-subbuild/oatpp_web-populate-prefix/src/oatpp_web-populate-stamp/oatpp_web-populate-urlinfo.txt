@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/download-oatpp_web-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/verify-oatpp_web-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/extract-oatpp_web-populate.cmake
+source_dir=F:/Code/Library/build/_deps/oatpp_web-src
+work_dir=F:/Code/Library/build/_deps
+url(s)=https://github.com/oatpp/oatpp-web/archive/refs/tags/1.3.0.zip
+hash=
+      no_extract=
+

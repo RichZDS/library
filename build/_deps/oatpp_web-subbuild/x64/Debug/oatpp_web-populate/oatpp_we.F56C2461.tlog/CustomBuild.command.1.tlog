@@ -1,0 +1,152 @@
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/tmp/oatpp_web-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-DOWNLOAD.RULE
+setlocal
+cd F:\Code\Library\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/download-oatpp_web-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/verify-oatpp_web-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/extract-oatpp_web-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-CONFIGURE.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp_web-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-BUILD.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp_web-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-INSTALL.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp_web-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\6D289C5120B2D98BBA9DDC0D7BE41A50\OATPP_WEB-POPULATE-TEST.RULE
+setlocal
+cd F:\Code\Library\build\_deps\oatpp_web-build
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\7D4F43CBC3EC411FFA4CAC1057AE74B4\OATPP_WEB-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Code/Library/build/_deps/oatpp_web-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/CMakeFiles/Debug/oatpp_web-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch F:/Code/Library/build/_deps/oatpp_web-subbuild/oatpp_web-populate-prefix/src/oatpp_web-populate-stamp/Debug/oatpp_web-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKEFILES\4E2F4F36EFB78E45780A5EB405172834\OATPP_WEB-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\CODE\LIBRARY\BUILD\_DEPS\OATPP_WEB-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Code/Library/build/_deps/oatpp_web-subbuild -BF:/Code/Library/build/_deps/oatpp_web-subbuild --check-stamp-file F:/Code/Library/build/_deps/oatpp_web-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
