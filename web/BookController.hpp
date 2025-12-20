@@ -4,6 +4,9 @@
 #include "BookDto.hpp"
 #include "BookService.hpp"
 #include <fstream>
+#include <string>
+
+using namespace std;
 
 #include OATPP_CODEGEN_BEGIN(ApiController)
 
@@ -31,27 +34,27 @@ public:
   }
 
   ENDPOINT("GET", "/", index) {
-    std::ifstream in("webroot/index.html", std::ios::binary);
+    ifstream in("webroot/index.html", ios::binary);
     if (!in) return createResponse(Status::CODE_404, "index.html not found");
-    std::string html((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    string html((istreambuf_iterator<char>(in)), istreambuf_iterator<char>());
     auto resp = ResponseFactory::createResponse(Status::CODE_200, html.c_str());
     resp->putHeader("Content-Type", "text/html; charset=utf-8");
     return resp;
   }
 
   ENDPOINT("GET", "/style.css", style) {
-    std::ifstream in("webroot/style.css", std::ios::binary);
+    ifstream in("webroot/style.css", ios::binary);
     if (!in) return createResponse(Status::CODE_404, "style.css not found");
-    std::string css((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    string css((istreambuf_iterator<char>(in)), istreambuf_iterator<char>());
     auto resp = ResponseFactory::createResponse(Status::CODE_200, css.c_str());
     resp->putHeader("Content-Type", "text/css; charset=utf-8");
     return resp;
   }
 
   ENDPOINT("GET", "/app.js", script) {
-    std::ifstream in("webroot/app.js", std::ios::binary);
+    ifstream in("webroot/app.js", ios::binary);
     if (!in) return createResponse(Status::CODE_404, "app.js not found");
-    std::string js((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+    string js((istreambuf_iterator<char>(in)), istreambuf_iterator<char>());
     auto resp = ResponseFactory::createResponse(Status::CODE_200, js.c_str());
     resp->putHeader("Content-Type", "application/javascript; charset=utf-8");
     return resp;
@@ -74,10 +77,10 @@ public:
   ENDPOINT("POST", "/books", createBook,
            BODY_DTO(Object<BookDto>, dto)) {
     Book b;
-    b.id = dto->id ? std::string(dto->id->c_str()) : "";
-    b.title = dto->title ? std::string(dto->title->c_str()) : "";
-    b.author = dto->author ? std::string(dto->author->c_str()) : "";
-    b.publisher = dto->publisher ? std::string(dto->publisher->c_str()) : "";
+    b.id = dto->id ? string(dto->id->c_str()) : "";
+    b.title = dto->title ? string(dto->title->c_str()) : "";
+    b.author = dto->author ? string(dto->author->c_str()) : "";
+    b.publisher = dto->publisher ? string(dto->publisher->c_str()) : "";
     b.price = dto->price;
     b.totalCopies = dto->totalCopies;
     b.availableCopies = dto->availableCopies;
@@ -115,11 +118,11 @@ public:
     auto path = request->getPathTail();
     // 如果是根路径的变体（由 IDE 产生）或者显式请求 index.html，都返回首页
     if (path == nullptr || path->empty() || 
-        path->find("ide_webview_request_time") != std::string::npos || 
+        path->find("ide_webview_request_time") != string::npos || 
         path->compare("index.html") == 0) {
-      std::ifstream in("webroot/index.html", std::ios::binary);
+      ifstream in("webroot/index.html", ios::binary);
       if (!in) return createResponse(Status::CODE_404, "index.html not found");
-      std::string html((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+      string html((istreambuf_iterator<char>(in)), istreambuf_iterator<char>());
       auto resp = ResponseFactory::createResponse(Status::CODE_200, html.c_str());
       resp->putHeader("Content-Type", "text/html; charset=utf-8");
       return resp;
