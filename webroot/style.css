@@ -24,3 +24,27 @@ input{margin-top:6px;padding:10px 12px;border-radius:8px;border:1px solid #1f293
 .table th,.table td{padding:10px;border-bottom:1px solid #1f2937;text-align:left}
 .table thead{background:linear-gradient(90deg,#111827,#1f2937)}
 .table tbody tr:hover{background:#111827}
+
+/* B树结构显示样式 */
+.tree-container{
+  background:var(--sub);border:1px solid #1f2937;border-radius:8px;padding:16px;
+  font-family:'Courier New',monospace;font-size:14px;line-height:1.8;max-height:600px;overflow-y:auto
+}
+.tree-line{
+  margin:4px 0;padding:8px 12px;border-radius:6px;white-space:pre-wrap;word-break:break-all
+}
+.tree-node-root{
+  background:linear-gradient(90deg,#7c3aed,#a855f7);border-left:4px solid #c084fc;font-weight:bold
+}
+.tree-node-internal{
+  background:#1e3a8a;border-left:4px solid #3b82f6
+}
+.tree-node-leaf{
+  background:#064e3b;border-left:4px solid #10b981
+}
+.tree-key{
+  color:#fbbf24;font-weight:bold;padding:2px 6px;background:rgba(0,0,0,0.3);border-radius:4px;margin:0 2px
+}
+.tree-empty{
+  text-align:center;padding:40px;color:var(--muted);font-style:italic
+}

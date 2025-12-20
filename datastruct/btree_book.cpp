@@ -1,5 +1,4 @@
 #include "btree_book.h"
-#include <algorithm>
 #include <sstream>
 #include <iostream>
 

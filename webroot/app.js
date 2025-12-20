@@ -79,10 +79,82 @@ async function viewTree(){
   const r = await api('/tree');
   if(r.ok) {
     const text = await r.text();
-    alert('B树结构 (凹入表):\n\n' + text);
+    displayTreeStructure(text);
+    document.getElementById('treeSection').style.display = 'block';
+    // 滚动到B树结构区域
+    document.getElementById('treeSection').scrollIntoView({ behavior: 'smooth' });
   } else {
     toast('获取失败', false);
   }
+}
+
+function closeTree(){
+  document.getElementById('treeSection').style.display = 'none';
+}
+
+function displayTreeStructure(structureText) {
+  const container = document.getElementById('treeContainer');
+  
+  if (!structureText || structureText.trim() === '') {
+    container.innerHTML = '<div class="tree-empty">B树为空</div>';
+    return;
+  }
+
+  // 解析凹入表文本
+  const lines = structureText.split('\n').filter(line => line.trim() !== '');
+  
+  if (lines.length === 0) {
+    container.innerHTML = '<div class="tree-empty">B树为空</div>';
+    return;
+  }
+
+  let html = '';
+
+  for (const line of lines) {
+    // 计算缩进层级（每4个空格为一级）
+    const indentMatch = line.match(/^(\s*)/);
+    const indent = indentMatch ? indentMatch[1] : '';
+    const depth = Math.floor(indent.length / 4);
+    
+    // 提取节点内容
+    const content = line.trim();
+    
+    // 判断节点类型
+    let nodeClass = 'tree-node-internal';
+    if (content.includes('(leaf)')) {
+      nodeClass = 'tree-node-leaf';
+    } else if (depth === 0) {
+      nodeClass = 'tree-node-root';
+    }
+
+    // 提取键值（方括号内的内容）
+    let displayContent = content;
+    const keyMatch = content.match(/\[(.*?)\]/);
+    
+    if (keyMatch) {
+      const keys = keyMatch[1].trim().split(/\s+/).filter(k => k);
+      // 高亮显示键值
+      displayContent = content.replace(/\[(.*?)\]/g, (match, keysStr) => {
+        const keysArray = keysStr.trim().split(/\s+/).filter(k => k);
+        const highlightedKeys = keysArray.map(k => 
+          `<span class="tree-key">${escapeHtml(k)}</span>`
+        ).join(' ');
+        return `[ ${highlightedKeys} ]`;
+      });
+    }
+
+    // 创建带缩进的HTML
+    const indentHtml = '&nbsp;'.repeat(depth * 4);
+    html += `<div class="tree-line ${nodeClass}" style="padding-left: ${depth * 20}px">${displayContent}</div>`;
+  }
+
+  container.innerHTML = html;
+}
+
+function escapeHtml(text) {
+  const div = document.createElement('div');
+  div.textContent = text;
+  return div.innerHTML;
 }
 
 // 自动生成数据的计数器，限制最多点击10次
