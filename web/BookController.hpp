@@ -99,6 +99,33 @@ public:
     if (m_service.giveback(id)) return createResponse(Status::CODE_200, "OK");
     return createResponse(Status::CODE_400, "Fail");
   }
+
+  ENDPOINT("GET", "/tree", getTree) {
+    auto str = m_service.getTreeStructure();
+    auto resp = ResponseFactory::createResponse(Status::CODE_200, str.c_str());
+    resp->putHeader("Content-Type", "text/plain; charset=utf-8");
+    return resp;
+  }
+
+  // 兜底路由：处理所有未匹配的 GET 请求
+  // 1. 解决 IDE 预览时 URL 带参数导致 404 的问题
+  // 2. 允许直接访问 /index.html
+  // 3. 处理真正的 404
+  ENDPOINT("GET", "*", wildcard, REQUEST(std::shared_ptr<IncomingRequest>, request)) {
+    auto path = request->getPathTail();
+    // 如果是根路径的变体（由 IDE 产生）或者显式请求 index.html，都返回首页
+    if (path == nullptr || path->empty() || 
+        path->find("ide_webview_request_time") != std::string::npos || 
+        path->compare("index.html") == 0) {
+      std::ifstream in("webroot/index.html", std::ios::binary);
+      if (!in) return createResponse(Status::CODE_404, "index.html not found");
+      std::string html((std::istreambuf_iterator<char>(in)), std::istreambuf_iterator<char>());
+      auto resp = ResponseFactory::createResponse(Status::CODE_200, html.c_str());
+      resp->putHeader("Content-Type", "text/html; charset=utf-8");
+      return resp;
+    }
+    return createResponse(Status::CODE_404, "Page not found");
+  }
 };
 
 #include OATPP_CODEGEN_END(ApiController)

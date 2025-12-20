@@ -45,5 +45,8 @@ public:
     rec->availableCopies += 1;
     return true;
   }
+  std::string getTreeStructure() const {
+    return m_books.getStructure();
+  }
 };
 

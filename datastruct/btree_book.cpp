@@ -1,5 +1,9 @@
 #include "btree_book.h"
 #include <algorithm>
+#include <sstream>
+#include <iostream>
+
+using namespace std;
 
 // 构造函数：初始化B树，t是最小度数（对于2-3树，t=2）
 // 2-3树意味着每个节点最多有2个键（2*t-1=3个键），最少有1个键（t-1=1个键）
@@ -17,13 +21,13 @@ void BTreeBook::destroy(BTreeBookNode* x) {
 }
 
 // 公开的搜索接口：从根节点开始搜索
-Book* BTreeBook::search(const std::string& id) const {
+Book* BTreeBook::search(const string& id) const {
     return searchNode(root, id);
 }
 
 // B树搜索算法（递归实现）
 // 核心思想：在B树中，每个节点内部是有序的，可以快速定位到下一个要搜索的子节点
-Book* BTreeBook::searchNode(BTreeBookNode* x, const std::string& id) const {
+Book* BTreeBook::searchNode(BTreeBookNode* x, const string& id) const {
     if (!x) return nullptr;  // 空树或到达空节点，未找到
     
     // 在当前节点中查找：找到第一个大于等于id的键的位置
@@ -157,14 +161,14 @@ void BTreeBook::insertNonFull(BTreeBookNode* x, const Book& book) {
 }
 
 // 中序遍历接口：按书号顺序收集所有图书
-void BTreeBook::inorder(std::vector<Book>& out) const {
+void BTreeBook::inorder(vector<Book>& out) const {
     inorderNode(root, out);
 }
 
 // 中序遍历B树节点（递归实现）
 // B树的中序遍历：对于每个节点，先遍历左子树，再访问当前键，最后遍历右子树
 // 在B树中：children[i]对应keys[i]之前的子树，children[i+1]对应keys[i]之后的子树
-void BTreeBook::inorderNode(BTreeBookNode* x, std::vector<Book>& out) const {
+void BTreeBook::inorderNode(BTreeBookNode* x, vector<Book>& out) const {
     if (!x) return;
     
     // 遍历当前节点的所有键
@@ -184,9 +188,9 @@ void BTreeBook::inorderNode(BTreeBookNode* x, std::vector<Book>& out) const {
 // 注意：这是一个简化的实现，真正的B树删除算法更复杂，需要处理多种情况
 // 这里采用重建法：先中序遍历收集所有数据，删除目标项，然后重建整个树
 // 优点：实现简单；缺点：效率较低，但适合学习目的
-bool BTreeBook::remove(const std::string& id) {
+bool BTreeBook::remove(const string& id) {
     // 步骤1：中序遍历收集所有图书数据
-    std::vector<Book> items;
+    vector<Book> items;
     inorder(items);
     
     // 步骤2：从数据中删除目标图书
@@ -210,3 +214,48 @@ bool BTreeBook::remove(const std::string& id) {
     return found;
 }
 
+// 获取B树的凹入表表示（字符串形式）
+// 凹入表（Indented Table）是一种树的文本显示方式
+// 通过缩进层级来表示父子关系，非常适合可视化B树结构
+string BTreeBook::getStructure() const {
+    stringstream ss;
+    if (!root) {
+        ss << "(Empty Tree)" << endl;
+    } else {
+        getStructureNode(root, 0, ss);
+    }
+    return ss.str();
+}
+
+// 递归生成凹入表字符串
+// 参数：depth是当前节点的深度，用于控制缩进
+void BTreeBook::getStructureNode(BTreeBookNode* x, int depth, stringstream& ss) const {
+    if (!x) return;
+    
+    // 1. 打印缩进（每一层级4个空格）
+    for (int i = 0; i < depth; ++i) {
+        ss << "    ";
+    }
+    
+    // 2. 打印当前节点的所有键
+    // 格式：[ Key1 Key2 ... ]
+    ss << "[ ";
+    for (const auto& k : x->keys) {
+        ss << k << " ";
+    }
+    ss << "]";
+    
+    // 3. 标记叶子节点
+    if (x->leaf) {
+        ss << " (leaf)";
+    }
+    ss << endl;
+    
+    // 4. 递归打印所有子节点
+    // B树的子节点在keys之间，所以要递归遍历
+    if (!x->leaf) {
+        for (auto c : x->children) {
+            getStructureNode(c, depth + 1, ss);
+        }
+    }
+}

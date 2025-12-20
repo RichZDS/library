@@ -26,6 +26,7 @@
       <div class="actions">
         <button class="btn primary" onclick="create()">提交</button>
         <button class="btn" onclick="resetForm()">清空</button>
+        <button class="btn" onclick="autoFill()">一键生成测试数据</button>
       </div>
       <div id="msg" class="msg"></div>
     </section>
@@ -37,6 +38,7 @@
           <input id="search" placeholder="按编号搜索…" />
           <button class="btn" onclick="searchById()">搜索</button>
           <button class="btn" onclick="list()">刷新</button>
+          <button class="btn" onclick="viewTree()">查看B树结构</button>
         </div>
       </div>
       <table class="table" id="table">

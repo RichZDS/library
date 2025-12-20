@@ -1,6 +1,8 @@
 #include "btree_author.h"
 #include <algorithm>
 
+using namespace std;
+
 // 构造函数：初始化作者索引B树（用于按作者查询图书）
 // 这个B树以作者名为键，存储该作者的所有图书ID列表
 BTreeAuthor::BTreeAuthor(int t): t(t), root(nullptr) {}
@@ -17,7 +19,7 @@ void BTreeAuthor::destroy(BTreeAuthorNode* x) {
 
 // 在当前节点中查找键的位置
 // 返回第一个大于等于key的键的索引
-int BTreeAuthor::findKeyIndex(BTreeAuthorNode* x, const std::string& key) const {
+int BTreeAuthor::findKeyIndex(BTreeAuthorNode* x, const string& key) const {
     int i = 0;
     while (i < (int)x->keys.size() && key > x->keys[i]) ++i;
     return i;
@@ -26,7 +28,7 @@ int BTreeAuthor::findKeyIndex(BTreeAuthorNode* x, const std::string& key) const 
 // 搜索包含指定作者的节点
 // 参数：x是当前节点，author是要查找的作者名，idx返回键在节点中的索引
 // 返回：找到的节点指针，如果未找到返回nullptr
-BTreeAuthorNode* BTreeAuthor::searchNode(BTreeAuthorNode* x, const std::string& author, int& idx) const {
+BTreeAuthorNode* BTreeAuthor::searchNode(BTreeAuthorNode* x, const string& author, int& idx) const {
     if (!x) return nullptr;  // 空节点，未找到
     
     // 在当前节点中查找作者名
@@ -76,12 +78,12 @@ void BTreeAuthor::splitChild(BTreeAuthorNode* x, int i) {
 // 添加作者-图书ID的关联
 // 如果作者已存在，将图书ID添加到该作者的ID列表中
 // 如果作者不存在，创建新的作者节点并插入
-void BTreeAuthor::add(const std::string& author, const std::string& id) {
+void BTreeAuthor::add(const string& author, const string& id) {
     // 情况1：空树，创建根节点
     if (!root) {
         root = new BTreeAuthorNode(true);
         root->keys.push_back(author);
-        root->ids.push_back(std::vector<std::string>{id});  // 初始ID列表只包含这一个ID
+        root->ids.push_back(vector<string>{id});  // 初始ID列表只包含这一个ID
         return;
     }
     
@@ -92,7 +94,7 @@ void BTreeAuthor::add(const std::string& author, const std::string& id) {
         // 作者已存在，只需将图书ID添加到该作者的ID列表中
         auto& vec = node->ids[idx];
         // 检查ID是否已存在，避免重复添加
-        if (std::find(vec.begin(), vec.end(), id) == vec.end()) {
+        if (find(vec.begin(), vec.end(), id) == vec.end()) {
             vec.push_back(id);
         }
         return;
@@ -113,13 +115,13 @@ void BTreeAuthor::add(const std::string& author, const std::string& id) {
 
 // 在非满节点x中插入新的作者-图书ID关联
 // 与BTreeBook的insertNonFull类似，但这里处理的是作者名和ID列表
-void BTreeAuthor::insertNonFull(BTreeAuthorNode* x, const std::string& author, const std::string& id) {
+void BTreeAuthor::insertNonFull(BTreeAuthorNode* x, const string& author, const string& id) {
     int i = (int)x->keys.size() - 1;
     
     if (x->leaf) {
         // 叶子节点：直接插入，保持有序
         x->keys.push_back("");
-        x->ids.push_back(std::vector<std::string>{});
+        x->ids.push_back(vector<string>{});
         
         // 从右向左移动，为新键腾出位置
         while (i >= 0 && author < x->keys[i]) {
@@ -130,7 +132,7 @@ void BTreeAuthor::insertNonFull(BTreeAuthorNode* x, const std::string& author, c
         
         // 在正确位置插入新作者和对应的ID列表
         x->keys[i + 1] = author;
-        x->ids[i + 1] = std::vector<std::string>{id};
+        x->ids[i + 1] = vector<string>{id};
     } else {
         // 内部节点：找到应该插入的子节点
         while (i >= 0 && author < x->keys[i]) --i;
@@ -149,7 +151,7 @@ void BTreeAuthor::insertNonFull(BTreeAuthorNode* x, const std::string& author, c
 
 // 删除作者-图书ID的关联
 // 如果删除后该作者没有其他图书了，则从B树中删除该作者节点
-void BTreeAuthor::removePair(const std::string& author, const std::string& id) {
+void BTreeAuthor::removePair(const string& author, const string& id) {
     // 查找包含该作者的节点
     int idx;
     BTreeAuthorNode* node = searchNode(root, author, idx);
@@ -157,16 +159,16 @@ void BTreeAuthor::removePair(const std::string& author, const std::string& id) {
     
     // 从该作者的ID列表中删除指定的ID
     auto& vec = node->ids[idx];
-    vec.erase(std::remove(vec.begin(), vec.end(), id), vec.end());
+    vec.erase(remove(vec.begin(), vec.end(), id), vec.end());
     
     // 如果该作者的所有图书ID都被删除了，需要从B树中删除该作者节点
     if (vec.empty()) {
         // 采用重建法：收集所有数据，删除目标作者，重建树
-        std::vector<std::pair<std::string, std::vector<std::string>>> items;
+        vector<pair<string, vector<string>>> items;
         inorderAuthors(root, items);
         
         // 删除目标作者的所有关联
-        items.erase(std::remove_if(items.begin(), items.end(), 
+        items.erase(remove_if(items.begin(), items.end(), 
             [&](auto& p){ return p.first == author; }), items.end());
         
         // 销毁原树并重建
@@ -182,7 +184,7 @@ void BTreeAuthor::removePair(const std::string& author, const std::string& id) {
 
 // 中序遍历：收集所有作者及其图书ID列表
 // 用于重建树或查询所有数据
-void BTreeAuthor::inorderAuthors(BTreeAuthorNode* x, std::vector<std::pair<std::string, std::vector<std::string>>>& out) const {
+void BTreeAuthor::inorderAuthors(BTreeAuthorNode* x, vector<pair<string, vector<string>>>& out) const {
     if (!x) return;
     
     // 遍历当前节点的所有键
@@ -200,10 +202,9 @@ void BTreeAuthor::inorderAuthors(BTreeAuthorNode* x, std::vector<std::pair<std::
 
 // 根据作者名获取该作者的所有图书ID列表
 // 这是作者索引的核心查询功能
-std::vector<std::string> BTreeAuthor::getIds(const std::string& author) const {
+vector<string> BTreeAuthor::getIds(const string& author) const {
     int idx;
     BTreeAuthorNode* node = searchNode(root, author, idx);
     if (!node) return {};  // 作者不存在，返回空列表
     return node->ids[idx];  // 返回该作者的图书ID列表
 }
-
