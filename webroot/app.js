@@ -5,12 +5,13 @@ function toast(msg, ok=true){
   setTimeout(()=>{ el.textContent='' }, 2200);
 }
 
-function resetForm(){ ['id','title','author','publisher','price','total'].forEach(id=>document.getElementById(id).value='') }
+function resetForm(){ ['id','title','author','publisher','price','publishDate','total'].forEach(id=>document.getElementById(id).value='') }
 
 async function create(){
   const dto = {
     id: id.value.trim(), title: title.value.trim(), author: author.value.trim(),
     publisher: publisher.value.trim(), price: parseFloat(price.value||0),
+    publishDate: publishDate.value.trim() || new Date().toISOString().split('T')[0],
     totalCopies: parseInt(total.value||0), availableCopies: parseInt(total.value||0)
   }
   const r = await api('/books', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(dto) })
@@ -28,11 +29,14 @@ async function list(){
       <td>${b.author||''}</td>
       <td>${b.publisher||''}</td>
       <td>${b.price??0}</td>
+      <td>${b.publishDate||''}</td>
       <td>${b.totalCopies??0}</td>
       <td>${b.availableCopies??0}</td>
       <td>
-        <button class="btn ok" onclick="borrow('${b.id}')">借阅</button>
-        <button class="btn" onclick="giveback('${b.id}')">归还</button>
+        <button class="btn ok" onclick="showBorrowDialog('${b.id}')">借阅</button>
+        <button class="btn" onclick="showReturnDialog('${b.id}')">归还</button>
+        <button class="btn warning" onclick="showReserveDialog('${b.id}')">预约</button>
+        <button class="btn info" onclick="showBookDetail('${b.id}')">详情</button>
         <button class="btn danger" onclick="removeBook('${b.id}')">删除</button>
       </td>`
     tbody.appendChild(tr)
@@ -52,23 +56,217 @@ async function searchById(){
     <td>${b.author||''}</td>
     <td>${b.publisher||''}</td>
     <td>${b.price??0}</td>
+    <td>${b.publishDate||''}</td>
     <td>${b.totalCopies??0}</td>
     <td>${b.availableCopies??0}</td>
     <td>
-      <button class="btn ok" onclick="borrow('${b.id}')">借阅</button>
-      <button class="btn" onclick="giveback('${b.id}')">归还</button>
+      <button class="btn ok" onclick="showBorrowDialog('${b.id}')">借阅</button>
+      <button class="btn" onclick="showReturnDialog('${b.id}')">归还</button>
+      <button class="btn warning" onclick="showReserveDialog('${b.id}')">预约</button>
+      <button class="btn info" onclick="showBookDetail('${b.id}')">详情</button>
       <button class="btn danger" onclick="removeBook('${b.id}')">删除</button>
     </td>`
   tbody.appendChild(tr)
 }
 
-async function borrow(id){
-  const r = await api(`/books/${encodeURIComponent(id)}/borrow`, { method:'PUT' })
-  toast(r.ok ? '借阅成功' : '借阅失败', r.ok); if(r.ok) list()
+async function searchByAuthor(){
+  const author = document.getElementById('searchAuthor').value.trim(); 
+  if(!author){ toast('请输入作者姓名', false); return }
+  const r = await api('/books/author/'+encodeURIComponent(author))
+  const tbody = document.querySelector('#table tbody'); tbody.innerHTML = ''
+  if(!r.ok){ toast('查询失败', false); return }
+  const data = await r.json()
+  if(data.length === 0){ toast('未找到该作者的图书', false); return }
+  data.forEach(b=>{
+    const tr = document.createElement('tr')
+    tr.innerHTML = `
+      <td>${b.id||''}</td>
+      <td>${b.title||''}</td>
+      <td>${b.author||''}</td>
+      <td>${b.publisher||''}</td>
+      <td>${b.price??0}</td>
+      <td>${b.publishDate||''}</td>
+      <td>${b.totalCopies??0}</td>
+      <td>${b.availableCopies??0}</td>
+      <td>
+        <button class="btn ok" onclick="showBorrowDialog('${b.id}')">借阅</button>
+        <button class="btn" onclick="showReturnDialog('${b.id}')">归还</button>
+        <button class="btn warning" onclick="showReserveDialog('${b.id}')">预约</button>
+        <button class="btn info" onclick="showBookDetail('${b.id}')">详情</button>
+        <button class="btn danger" onclick="removeBook('${b.id}')">删除</button>
+      </td>`
+    tbody.appendChild(tr)
+  })
+  toast(`找到 ${data.length} 本图书`)
 }
-async function giveback(id){
-  const r = await api(`/books/${encodeURIComponent(id)}/return`, { method:'PUT' })
-  toast(r.ok ? '归还成功' : '归还失败', r.ok); if(r.ok) list()
+
+// 显示借阅对话框
+function showBorrowDialog(bookId){
+  document.getElementById('actionModalTitle').textContent = '借阅图书'
+  document.getElementById('actionModalContent').innerHTML = `
+    <p>图书编号：${bookId}</p>
+    <div style="margin: 10px 0;">
+      <label>借阅者证号：<input id="borrowerId" style="width: 200px;" /></label>
+    </div>
+    <div style="margin: 10px 0;">
+      <label>借阅者姓名：<input id="borrowerName" style="width: 200px;" /></label>
+    </div>
+    <div style="margin-top: 20px;">
+      <button class="btn primary" onclick="doBorrow('${bookId}')">确认借阅</button>
+      <button class="btn" onclick="closeActionModal()">取消</button>
+    </div>
+  `
+  document.getElementById('actionModal').style.display = 'block'
+}
+
+// 执行借阅
+async function doBorrow(bookId){
+  const borrowerId = document.getElementById('borrowerId').value.trim()
+  const borrowerName = document.getElementById('borrowerName').value.trim()
+  if(!borrowerId || !borrowerName){ toast('请输入借阅者信息', false); return }
+  const r = await api(`/books/${encodeURIComponent(bookId)}/borrow`, {
+    method:'PUT',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({borrowerId, borrowerName})
+  })
+  toast(r.ok ? '借阅成功' : '借阅失败：'+(await r.text()), r.ok)
+  if(r.ok){ closeActionModal(); list() }
+}
+
+// 显示归还对话框
+function showReturnDialog(bookId){
+  document.getElementById('actionModalTitle').textContent = '归还图书'
+  document.getElementById('actionModalContent').innerHTML = `
+    <p>图书编号：${bookId}</p>
+    <div style="margin: 10px 0;">
+      <label>借阅者证号：<input id="returnBorrowerId" style="width: 200px;" /></label>
+    </div>
+    <div style="margin-top: 20px;">
+      <button class="btn primary" onclick="doReturn('${bookId}')">确认归还</button>
+      <button class="btn" onclick="closeActionModal()">取消</button>
+    </div>
+  `
+  document.getElementById('actionModal').style.display = 'block'
+}
+
+// 执行归还
+async function doReturn(bookId){
+  const borrowerId = document.getElementById('returnBorrowerId').value.trim()
+  if(!borrowerId){ toast('请输入借阅者证号', false); return }
+  const r = await api(`/books/${encodeURIComponent(bookId)}/return`, {
+    method:'PUT',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({borrowerId})
+  })
+  toast(r.ok ? '归还成功' : '归还失败：'+(await r.text()), r.ok)
+  if(r.ok){ closeActionModal(); list() }
+}
+
+// 显示预约对话框
+function showReserveDialog(bookId){
+  document.getElementById('actionModalTitle').textContent = '预约图书'
+  document.getElementById('actionModalContent').innerHTML = `
+    <p>图书编号：${bookId}</p>
+    <div style="margin: 10px 0;">
+      <label>预约者证号：<input id="reserverId" style="width: 200px;" /></label>
+    </div>
+    <div style="margin: 10px 0;">
+      <label>预约者姓名：<input id="reserverName" style="width: 200px;" /></label>
+    </div>
+    <div style="margin-top: 20px;">
+      <button class="btn primary" onclick="doReserve('${bookId}')">确认预约</button>
+      <button class="btn" onclick="closeActionModal()">取消</button>
+    </div>
+  `
+  document.getElementById('actionModal').style.display = 'block'
+}
+
+// 执行预约
+async function doReserve(bookId){
+  const reserverId = document.getElementById('reserverId').value.trim()
+  const reserverName = document.getElementById('reserverName').value.trim()
+  if(!reserverId || !reserverName){ toast('请输入预约者信息', false); return }
+  const r = await api(`/books/${encodeURIComponent(bookId)}/reserve`, {
+    method:'PUT',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({reserverId, reserverName})
+  })
+  toast(r.ok ? '预约成功' : '预约失败：'+(await r.text()), r.ok)
+  if(r.ok){ closeActionModal(); list() }
+}
+
+// 显示图书详情
+async function showBookDetail(bookId){
+  const r = await api('/books/'+encodeURIComponent(bookId))
+  if(!r.ok){ toast('获取详情失败', false); return }
+  const b = await r.json()
+  
+  let html = `
+    <h3>${b.title||''}</h3>
+    <table style="width:100%; margin-top: 10px;">
+      <tr><th style="text-align:left; width:100px;">编号：</th><td>${b.id||''}</td></tr>
+      <tr><th style="text-align:left;">作者：</th><td>${b.author||''}</td></tr>
+      <tr><th style="text-align:left;">出版社：</th><td>${b.publisher||''}</td></tr>
+      <tr><th style="text-align:left;">定价：</th><td>${b.price??0} 元</td></tr>
+      <tr><th style="text-align:left;">出版时间：</th><td>${b.publishDate||''}</td></tr>
+      <tr><th style="text-align:left;">总存量：</th><td>${b.totalCopies??0}</td></tr>
+      <tr><th style="text-align:left;">现存量：</th><td>${b.availableCopies??0}</td></tr>
+    </table>
+  `
+  
+  // 借阅记录
+  if(b.borrowRecords && b.borrowRecords.length > 0){
+    html += '<h4 style="margin-top: 20px;">借阅记录：</h4><table style="width:100%; border-collapse: collapse;"><thead><tr><th>借阅者证号</th><th>借阅者姓名</th><th>借阅时间</th><th>预期归还时间</th><th>实际归还时间</th><th>状态</th></tr></thead><tbody>'
+    b.borrowRecords.forEach(record=>{
+      const borrowTime = new Date(record.borrowTime * 1000).toLocaleString('zh-CN')
+      const expectedReturnTime = new Date(record.expectedReturnTime * 1000).toLocaleString('zh-CN')
+      const actualReturnTime = record.actualReturnTime ? new Date(record.actualReturnTime * 1000).toLocaleString('zh-CN') : '未归还'
+      const status = record.actualReturnTime ? '已归还' : '借阅中'
+      html += `<tr><td>${record.borrowerId}</td><td>${record.borrowerName}</td><td>${borrowTime}</td><td>${expectedReturnTime}</td><td>${actualReturnTime}</td><td>${status}</td></tr>`
+    })
+    html += '</tbody></table>'
+  } else {
+    html += '<p style="margin-top: 20px;">暂无借阅记录</p>'
+  }
+  
+  // 预约记录
+  if(b.reservationRecords && b.reservationRecords.length > 0){
+    html += '<h4 style="margin-top: 20px;">预约记录：</h4><table style="width:100%; border-collapse: collapse;"><thead><tr><th>预约者证号</th><th>预约者姓名</th><th>预约时间</th><th>预期取书时间</th><th>实际取书时间</th><th>状态</th></tr></thead><tbody>'
+    b.reservationRecords.forEach(record=>{
+      const reserveTime = new Date(record.reserveTime * 1000).toLocaleString('zh-CN')
+      const expectedPickupTime = new Date(record.expectedPickupTime * 1000).toLocaleString('zh-CN')
+      const actualPickupTime = record.actualPickupTime ? new Date(record.actualPickupTime * 1000).toLocaleString('zh-CN') : '未取书'
+      const status = record.actualPickupTime ? '已取书' : '预约中'
+      html += `<tr><td>${record.reserverId}</td><td>${record.reserverName}</td><td>${reserveTime}</td><td>${expectedPickupTime}</td><td>${actualPickupTime}</td><td>${status}</td></tr>`
+    })
+    html += '</tbody></table>'
+  } else {
+    html += '<p style="margin-top: 20px;">暂无预约记录</p>'
+  }
+  
+  document.getElementById('bookDetailContent').innerHTML = html
+  document.getElementById('bookDetailModal').style.display = 'block'
+}
+
+// 关闭模态框
+function closeActionModal(){
+  document.getElementById('actionModal').style.display = 'none'
+}
+
+function closeBookDetail(){
+  document.getElementById('bookDetailModal').style.display = 'none'
+}
+
+// 点击模态框外部关闭
+window.onclick = function(event) {
+  const actionModal = document.getElementById('actionModal')
+  const bookDetailModal = document.getElementById('bookDetailModal')
+  if (event.target == actionModal) {
+    actionModal.style.display = 'none'
+  }
+  if (event.target == bookDetailModal) {
+    bookDetailModal.style.display = 'none'
+  }
 }
 async function removeBook(id){
   const r = await api(`/books/${encodeURIComponent(id)}`, { method:'DELETE' })
@@ -202,6 +400,7 @@ async function autoFill() {
         author: template.a,
         publisher: template.p,
         price: template.price,
+        publishDate: new Date(2020 + Math.floor(Math.random() * 5), Math.floor(Math.random() * 12), Math.floor(Math.random() * 28) + 1).toISOString().split('T')[0],
         totalCopies: 5,
         availableCopies: 5
       };

@@ -21,8 +21,8 @@ add_executable(library_web
   web/BookService.cpp
   web/BookController.hpp
   web/BookController.cpp
-  datastruct/btree_book.cpp
-  datastruct/btree_author.cpp
+  library_core/btree_book.cpp
+  library_core/btree_author.cpp
 )
 
 target_include_directories(library_web PRIVATE
@@ -30,7 +30,7 @@ target_include_directories(library_web PRIVATE
   ${oatpp_BINARY_DIR}/src
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/controller
-  ${CMAKE_CURRENT_SOURCE_DIR}/datastruct
+  ${CMAKE_CURRENT_SOURCE_DIR}/library_core
 )
 
 target_link_libraries(library_web PRIVATE oatpp)

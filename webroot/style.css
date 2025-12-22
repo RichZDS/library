@@ -19,6 +19,8 @@ input{margin-top:6px;padding:10px 12px;border-radius:8px;border:1px solid #1f293
 .btn.primary{background:linear-gradient(90deg,#2563eb,#60a5fa);border:0}
 .btn.danger{background:linear-gradient(90deg,#ef4444,#f87171);border:0}
 .btn.ok{background:linear-gradient(90deg,#10b981,#34d399);border:0}
+.btn.warning{background:linear-gradient(90deg,#f59e0b,#fbbf24);border:0}
+.btn.info{background:linear-gradient(90deg,#3b82f6,#60a5fa);border:0}
 .msg{margin-top:8px;font-size:12px;color:var(--muted)}
 .table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden}
 .table th,.table td{padding:10px;border-bottom:1px solid #1f2937;text-align:left}
@@ -47,4 +49,34 @@ input{margin-top:6px;padding:10px 12px;border-radius:8px;border:1px solid #1f293
 }
 .tree-empty{
   text-align:center;padding:40px;color:var(--muted);font-style:italic
+}
+
+/* 模态框样式 */
+.modal{
+  display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;
+  background-color:rgba(0,0,0,0.7);overflow:auto
+}
+.modal-content{
+  background-color:var(--panel);margin:5% auto;padding:0;border:1px solid #1f2937;
+  border-radius:12px;width:90%;max-width:700px;box-shadow:0 20px 60px rgba(0,0,0,0.5)
+}
+.modal-header{
+  padding:20px;border-bottom:1px solid #1f2937;display:flex;justify-content:space-between;align-items:center
+}
+.modal-header h2{margin:0;font-size:20px}
+.close{
+  color:var(--muted);font-size:28px;font-weight:bold;cursor:pointer;line-height:1
+}
+.close:hover{color:var(--text)}
+.modal-body{
+  padding:20px;max-height:70vh;overflow-y:auto
+}
+.modal-body table{
+  width:100%;border-collapse:collapse;margin-top:10px
+}
+.modal-body table th,.modal-body table td{
+  padding:8px;border:1px solid #1f2937;text-align:left
+}
+.modal-body table thead{
+  background:linear-gradient(90deg,#111827,#1f2937)
 }
