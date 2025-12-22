@@ -41,13 +41,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -72,6 +76,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -90,7 +95,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "message-v1"
     backtrace:
@@ -107,7 +111,7 @@ events:
       The output was:
       0
       閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
-      鐢熸垚鍚姩鏃堕棿涓?2025/12/18 23:08:03銆?
+      鐢熸垚鍚姩鏃堕棿涓?2025/12/22 16:36:49銆?
       
       鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\4.2.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj鈥?榛樿鐩爣)銆?
       PrepareForBuild:
@@ -136,7 +140,7 @@ events:
           0 涓鍛?
           0 涓敊璇?
       
-      宸茬敤鏃堕棿 00:00:03.33
+      宸茬敤鏃堕棿 00:00:01.44
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -173,12 +177,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -202,6 +210,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -212,13 +221,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -230,13 +236,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -261,6 +271,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -279,7 +290,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -307,12 +317,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -336,6 +350,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -346,13 +361,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lld-link.exe"
@@ -369,9 +381,6 @@ events:
       - "E:/ServBay/packages/go/current/bin/lld-link.com"
       - "E:/ServBay/packages/go/current/bin/lld-link.exe"
       - "E:/ServBay/packages/go/current/bin/lld-link"
-      - "E:/VM/bin/lld-link.com"
-      - "E:/VM/bin/lld-link.exe"
-      - "E:/VM/bin/lld-link"
       - "E:/ServBay/bin/lld-link.com"
       - "E:/ServBay/bin/lld-link.exe"
       - "E:/ServBay/bin/lld-link"
@@ -381,12 +390,27 @@ events:
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/lld-link.com"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/lld-link.exe"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/lld-link"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/lld-link.com"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/lld-link.exe"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/lld-link"
-      - "C:/Windows/System32/config/systemprofile/go/bin/lld-link.com"
-      - "C:/Windows/System32/config/systemprofile/go/bin/lld-link.exe"
-      - "C:/Windows/System32/config/systemprofile/go/bin/lld-link"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/lld-link.com"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/lld-link.exe"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/lld-link"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/lld-link.com"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/lld-link.exe"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/lld-link"
+      - "C:/Users/33882/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/33882/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/33882/AppData/Roaming/npm/lld-link"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/lld-link.com"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/lld-link.exe"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/lld-link"
+      - "C:/Users/33882/.cargo/bin/lld-link.com"
+      - "C:/Users/33882/.cargo/bin/lld-link.exe"
+      - "C:/Users/33882/.cargo/bin/lld-link"
+      - "C:/Users/33882/go/bin/lld-link.com"
+      - "C:/Users/33882/go/bin/lld-link.exe"
+      - "C:/Users/33882/go/bin/lld-link"
+      - "E:/VM/bin/lld-link.com"
+      - "E:/VM/bin/lld-link.exe"
+      - "E:/VM/bin/lld-link"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.com"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link.exe"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/lld-link"
@@ -456,6 +480,9 @@ events:
       - "E:/cursor/resources/app/bin/lld-link.com"
       - "E:/cursor/resources/app/bin/lld-link.exe"
       - "E:/cursor/resources/app/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
       - "F:/Trae/bin/lld-link.com"
       - "F:/Trae/bin/lld-link.exe"
       - "F:/Trae/bin/lld-link"
@@ -486,27 +513,18 @@ events:
       - "F:/Code/Library/MinGw/ucrt64/bin/lld-link.com"
       - "F:/Code/Library/MinGw/ucrt64/bin/lld-link.exe"
       - "F:/Code/Library/MinGw/ucrt64/bin/lld-link"
-      - "C:/Users/33882/AppData/Roaming/npm/lld-link.com"
-      - "C:/Users/33882/AppData/Roaming/npm/lld-link.exe"
-      - "C:/Users/33882/AppData/Roaming/npm/lld-link"
       - "F:/SoftWare/WebStorm 2024.1/bin/lld-link.com"
       - "F:/SoftWare/WebStorm 2024.1/bin/lld-link.exe"
       - "F:/SoftWare/WebStorm 2024.1/bin/lld-link"
       - "F:/Microsoft VS Code/bin/lld-link.com"
       - "F:/Microsoft VS Code/bin/lld-link.exe"
       - "F:/Microsoft VS Code/bin/lld-link"
-      - "C:/Users/33882/go/bin/lld-link.com"
-      - "C:/Users/33882/go/bin/lld-link.exe"
-      - "C:/Users/33882/go/bin/lld-link"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/lld-link.com"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/lld-link.exe"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/lld-link"
       - "E:/Antigravity/bin/lld-link.com"
       - "E:/Antigravity/bin/lld-link.exe"
       - "E:/Antigravity/bin/lld-link"
-      - "C:/Program Files/CMake/bin/lld-link.com"
-      - "C:/Program Files/CMake/bin/lld-link.exe"
-      - "C:/Program Files/CMake/bin/lld-link"
     found: false
     search_context:
       ENV{PATH}:
@@ -516,13 +534,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -547,6 +569,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -565,7 +588,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -591,12 +613,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -620,6 +646,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -630,13 +657,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/link.exe"
@@ -648,13 +672,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -679,6 +707,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -697,7 +726,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -723,12 +751,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -752,6 +784,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -762,13 +795,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.com"
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/mt.exe"
@@ -785,9 +815,6 @@ events:
       - "E:/ServBay/packages/go/current/bin/mt.com"
       - "E:/ServBay/packages/go/current/bin/mt.exe"
       - "E:/ServBay/packages/go/current/bin/mt"
-      - "E:/VM/bin/mt.com"
-      - "E:/VM/bin/mt.exe"
-      - "E:/VM/bin/mt"
       - "E:/ServBay/bin/mt.com"
       - "E:/ServBay/bin/mt.exe"
       - "E:/ServBay/bin/mt"
@@ -797,12 +824,27 @@ events:
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/mt.com"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/mt.exe"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/mt"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/mt.com"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/mt.exe"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/mt"
-      - "C:/Windows/System32/config/systemprofile/go/bin/mt.com"
-      - "C:/Windows/System32/config/systemprofile/go/bin/mt.exe"
-      - "C:/Windows/System32/config/systemprofile/go/bin/mt"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/mt.com"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/mt.exe"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/mt"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/mt.com"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/mt.exe"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/mt"
+      - "C:/Users/33882/AppData/Roaming/npm/mt.com"
+      - "C:/Users/33882/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/33882/AppData/Roaming/npm/mt"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/mt.com"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/mt.exe"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/mt"
+      - "C:/Users/33882/.cargo/bin/mt.com"
+      - "C:/Users/33882/.cargo/bin/mt.exe"
+      - "C:/Users/33882/.cargo/bin/mt"
+      - "C:/Users/33882/go/bin/mt.com"
+      - "C:/Users/33882/go/bin/mt.exe"
+      - "C:/Users/33882/go/bin/mt"
+      - "E:/VM/bin/mt.com"
+      - "E:/VM/bin/mt.exe"
+      - "E:/VM/bin/mt"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.com"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/mt.exe"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/mt"
@@ -872,6 +914,9 @@ events:
       - "E:/cursor/resources/app/bin/mt.com"
       - "E:/cursor/resources/app/bin/mt.exe"
       - "E:/cursor/resources/app/bin/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
       - "F:/Trae/bin/mt.com"
       - "F:/Trae/bin/mt.exe"
       - "F:/Trae/bin/mt"
@@ -902,27 +947,18 @@ events:
       - "F:/Code/Library/MinGw/ucrt64/bin/mt.com"
       - "F:/Code/Library/MinGw/ucrt64/bin/mt.exe"
       - "F:/Code/Library/MinGw/ucrt64/bin/mt"
-      - "C:/Users/33882/AppData/Roaming/npm/mt.com"
-      - "C:/Users/33882/AppData/Roaming/npm/mt.exe"
-      - "C:/Users/33882/AppData/Roaming/npm/mt"
       - "F:/SoftWare/WebStorm 2024.1/bin/mt.com"
       - "F:/SoftWare/WebStorm 2024.1/bin/mt.exe"
       - "F:/SoftWare/WebStorm 2024.1/bin/mt"
       - "F:/Microsoft VS Code/bin/mt.com"
       - "F:/Microsoft VS Code/bin/mt.exe"
       - "F:/Microsoft VS Code/bin/mt"
-      - "C:/Users/33882/go/bin/mt.com"
-      - "C:/Users/33882/go/bin/mt.exe"
-      - "C:/Users/33882/go/bin/mt"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/mt.com"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/mt.exe"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/mt"
       - "E:/Antigravity/bin/mt.com"
       - "E:/Antigravity/bin/mt.exe"
       - "E:/Antigravity/bin/mt"
-      - "C:/Program Files/CMake/bin/mt.com"
-      - "C:/Program Files/CMake/bin/mt.exe"
-      - "C:/Program Files/CMake/bin/mt"
     found: false
     search_context:
       ENV{PATH}:
@@ -932,13 +968,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -963,6 +1003,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -981,7 +1022,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1007,12 +1047,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1036,6 +1080,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -1046,13 +1091,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
     searched_directories:
       - "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/Hostx64/x64/lib.exe"
@@ -1064,13 +1106,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1095,6 +1141,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -1113,7 +1160,6 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1141,12 +1187,16 @@ events:
       - "C:/Users/33882/.trae/sdks/versions/node/current/"
       - "C:/Program Files/PowerShell/7/"
       - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
       - "E:/ServBay/bin/"
       - "F:/Code/Library/%APPDATA%/npm/"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/"
+      - "C:/Users/33882/AppData/Roaming/npm/"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/33882/.cargo/bin/"
+      - "C:/Users/33882/go/bin/"
+      - "E:/VM/bin/"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
@@ -1170,6 +1220,7 @@ events:
       - "C:/nvm4w/nodejs/"
       - "C:/Program Files/Go/bin/"
       - "E:/cursor/resources/app/bin/"
+      - "C:/Program Files/CMake/bin/"
       - "F:/Trae/bin/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
       - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
@@ -1180,13 +1231,10 @@ events:
       - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
       - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
       - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
       - "F:/SoftWare/WebStorm 2024.1/bin/"
       - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
       - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -1196,9 +1244,9 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Program Files/LibraryWeb/bin/"
-      - "C:/Program Files/LibraryWeb/sbin/"
-      - "C:/Program Files/LibraryWeb/"
+      - "C:/Program Files (x86)/LibraryCLI/bin/"
+      - "C:/Program Files (x86)/LibraryCLI/sbin/"
+      - "C:/Program Files (x86)/LibraryCLI/"
     searched_directories:
       - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/rc.com"
       - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/rc.exe"
@@ -1212,9 +1260,6 @@ events:
       - "E:/ServBay/packages/go/current/bin/rc.com"
       - "E:/ServBay/packages/go/current/bin/rc.exe"
       - "E:/ServBay/packages/go/current/bin/rc"
-      - "E:/VM/bin/rc.com"
-      - "E:/VM/bin/rc.exe"
-      - "E:/VM/bin/rc"
       - "E:/ServBay/bin/rc.com"
       - "E:/ServBay/bin/rc.exe"
       - "E:/ServBay/bin/rc"
@@ -1224,12 +1269,27 @@ events:
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/rc.com"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/rc.exe"
       - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/rc"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/rc.com"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/rc.exe"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/rc"
-      - "C:/Windows/System32/config/systemprofile/go/bin/rc.com"
-      - "C:/Windows/System32/config/systemprofile/go/bin/rc.exe"
-      - "C:/Windows/System32/config/systemprofile/go/bin/rc"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/rc.com"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/rc.exe"
+      - "F:/Code/Library/%USERPROFILE%/.cargo/bin/rc"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/rc.com"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/rc.exe"
+      - "F:/Code/Library/%USERPROFILE%/go/bin/rc"
+      - "C:/Users/33882/AppData/Roaming/npm/rc.com"
+      - "C:/Users/33882/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/33882/AppData/Roaming/npm/rc"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/rc.com"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/rc.exe"
+      - "C:/Users/33882/AppData/Roaming/Composer/vendor/bin/rc"
+      - "C:/Users/33882/.cargo/bin/rc.com"
+      - "C:/Users/33882/.cargo/bin/rc.exe"
+      - "C:/Users/33882/.cargo/bin/rc"
+      - "C:/Users/33882/go/bin/rc.com"
+      - "C:/Users/33882/go/bin/rc.exe"
+      - "C:/Users/33882/go/bin/rc"
+      - "E:/VM/bin/rc.com"
+      - "E:/VM/bin/rc.exe"
+      - "E:/VM/bin/rc"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.com"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/rc.exe"
       - "C:/Program Files/Common Files/Oracle/Java/javapath/rc"
@@ -1299,6 +1359,9 @@ events:
       - "E:/cursor/resources/app/bin/rc.com"
       - "E:/cursor/resources/app/bin/rc.exe"
       - "E:/cursor/resources/app/bin/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
       - "F:/Trae/bin/rc.com"
       - "F:/Trae/bin/rc.exe"
       - "F:/Trae/bin/rc"
@@ -1329,27 +1392,18 @@ events:
       - "F:/Code/Library/MinGw/ucrt64/bin/rc.com"
       - "F:/Code/Library/MinGw/ucrt64/bin/rc.exe"
       - "F:/Code/Library/MinGw/ucrt64/bin/rc"
-      - "C:/Users/33882/AppData/Roaming/npm/rc.com"
-      - "C:/Users/33882/AppData/Roaming/npm/rc.exe"
-      - "C:/Users/33882/AppData/Roaming/npm/rc"
       - "F:/SoftWare/WebStorm 2024.1/bin/rc.com"
       - "F:/SoftWare/WebStorm 2024.1/bin/rc.exe"
       - "F:/SoftWare/WebStorm 2024.1/bin/rc"
       - "F:/Microsoft VS Code/bin/rc.com"
       - "F:/Microsoft VS Code/bin/rc.exe"
       - "F:/Microsoft VS Code/bin/rc"
-      - "C:/Users/33882/go/bin/rc.com"
-      - "C:/Users/33882/go/bin/rc.exe"
-      - "C:/Users/33882/go/bin/rc"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/rc.com"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/rc.exe"
       - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/rc"
       - "E:/Antigravity/bin/rc.com"
       - "E:/Antigravity/bin/rc.exe"
       - "E:/Antigravity/bin/rc"
-      - "C:/Program Files/CMake/bin/rc.com"
-      - "C:/Program Files/CMake/bin/rc.exe"
-      - "C:/Program Files/CMake/bin/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -1377,15 +1431,15 @@ events:
       - "C:/Program Files/CMake/rc.com"
       - "C:/Program Files/CMake/rc.exe"
       - "C:/Program Files/CMake/rc"
-      - "C:/Program Files/LibraryWeb/bin/rc.com"
-      - "C:/Program Files/LibraryWeb/bin/rc.exe"
-      - "C:/Program Files/LibraryWeb/bin/rc"
-      - "C:/Program Files/LibraryWeb/sbin/rc.com"
-      - "C:/Program Files/LibraryWeb/sbin/rc.exe"
-      - "C:/Program Files/LibraryWeb/sbin/rc"
-      - "C:/Program Files/LibraryWeb/rc.com"
-      - "C:/Program Files/LibraryWeb/rc.exe"
-      - "C:/Program Files/LibraryWeb/rc"
+      - "C:/Program Files (x86)/LibraryCLI/bin/rc.com"
+      - "C:/Program Files (x86)/LibraryCLI/bin/rc.exe"
+      - "C:/Program Files (x86)/LibraryCLI/bin/rc"
+      - "C:/Program Files (x86)/LibraryCLI/sbin/rc.com"
+      - "C:/Program Files (x86)/LibraryCLI/sbin/rc.exe"
+      - "C:/Program Files (x86)/LibraryCLI/sbin/rc"
+      - "C:/Program Files (x86)/LibraryCLI/rc.com"
+      - "C:/Program Files (x86)/LibraryCLI/rc.exe"
+      - "C:/Program Files (x86)/LibraryCLI/rc"
     found: false
     search_context:
       ENV{PATH}:
@@ -1395,13 +1449,17 @@ events:
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
         - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
         - "E:\\ServBay\\bin"
         - "E:\\ServBay\\packages\\go\\current\\bin"
         - "%APPDATA%\\npm"
         - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
+        - "%USERPROFILE%\\.cargo\\bin"
+        - "%USERPROFILE%\\go\\bin"
+        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
+        - "C:\\Users\\33882\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\33882\\.cargo\\bin"
+        - "C:\\Users\\33882\\go\\bin"
+        - "E:\\VM\\bin\\"
         - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1426,6 +1484,7 @@ events:
         - "C:\\nvm4w\\nodejs"
         - "C:\\Program Files\\Go\\bin"
         - "E:\\cursor\\resources\\app\\bin"
+        - "C:\\Program Files\\CMake\\bin"
         - "f:\\Trae\\bin"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
         - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
@@ -1444,13 +1503,12 @@ events:
         - "C:\\Users\\33882\\go\\bin"
         - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
         - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/LibraryWeb"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/LibraryCLI"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Program Files/LibraryWeb"
+        - "C:/Program Files (x86)/LibraryCLI"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1460,8 +1518,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-v0c5if"
-      binary: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-v0c5if"
+      source: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-dolphh"
+      binary: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-dolphh"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -1471,39 +1529,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-v0c5if'
+        Change Dir: 'F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-dolphh'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0520f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_515af.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
-        鐢熸垚鍚姩鏃堕棿涓?2025/12/18 23:08:07銆?
+        鐢熸垚鍚姩鏃堕棿涓?2025/12/22 16:36:51銆?
         
-        鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0c5if\\cmTC_0520f.vcxproj鈥?榛樿鐩爣)銆?
+        鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dolphh\\cmTC_515af.vcxproj鈥?榛樿鐩爣)銆?
         PrepareForBuild:
           宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0c5if\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_0520f.dir\\Debug\\cmTC_0520f.tlog\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dolphh\\Debug\\鈥濄€?
+          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_515af.dir\\Debug\\cmTC_515af.tlog\\鈥濄€?
         InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_0520f.dir\\Debug\\cmTC_0520f.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_0520f.dir\\Debug\\cmTC_0520f.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
+          姝ｅ湪鍒涘缓鈥渃mTC_515af.dir\\Debug\\cmTC_515af.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
+          姝ｅ湪瀵光€渃mTC_515af.dir\\Debug\\cmTC_515af.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_0520f.dir\\Debug\\\\" /Fd"cmTC_0520f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_515af.dir\\Debug\\\\" /Fd"cmTC_515af.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35222 鐗?
           鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_0520f.dir\\Debug\\\\" /Fd"cmTC_0520f.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_515af.dir\\Debug\\\\" /Fd"cmTC_515af.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.2\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0c5if\\Debug\\cmTC_0520f.exe" /INCREMENTAL /ILK:"cmTC_0520f.dir\\Debug\\cmTC_0520f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-v0c5if/Debug/cmTC_0520f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-v0c5if/Debug/cmTC_0520f.lib" /MACHINE:X64  /machine:x64 cmTC_0520f.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_0520f.vcxproj -> F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0c5if\\Debug\\cmTC_0520f.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dolphh\\Debug\\cmTC_515af.exe" /INCREMENTAL /ILK:"cmTC_515af.dir\\Debug\\cmTC_515af.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-dolphh/Debug/cmTC_515af.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-dolphh/Debug/cmTC_515af.lib" /MACHINE:X64  /machine:x64 cmTC_515af.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_515af.vcxproj -> F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dolphh\\Debug\\cmTC_515af.exe
         FinalizeBuildStatus:
-          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_0520f.dir\\Debug\\cmTC_0520f.tlog\\unsuccessfulbuild鈥濄€?
-          姝ｅ湪瀵光€渃mTC_0520f.dir\\Debug\\cmTC_0520f.tlog\\cmTC_0520f.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
-        宸插畬鎴愮敓鎴愰」鐩€淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-v0c5if\\cmTC_0520f.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
+          姝ｅ湪鍒犻櫎鏂囦欢鈥渃mTC_515af.dir\\Debug\\cmTC_515af.tlog\\unsuccessfulbuild鈥濄€?
+          姝ｅ湪瀵光€渃mTC_515af.dir\\Debug\\cmTC_515af.tlog\\cmTC_515af.lastbuildstate鈥濇墽琛?Touch 浠诲姟銆?
+        宸插畬鎴愮敓鎴愰」鐩€淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dolphh\\cmTC_515af.vcxproj鈥?榛樿鐩爣)鐨勬搷浣溿€?
         
         宸叉垚鍔熺敓鎴愩€?
             0 涓鍛?
             0 涓敊璇?
         
-        宸茬敤鏃堕棿 00:00:01.33
+        宸茬敤鏃堕棿 00:00:01.35
         
       exitCode: 0
   -
@@ -1534,346 +1592,4 @@ events:
       Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.44.35207/bin/HostX64/x64/link.exe" "-v"
       Microsoft (R) Incremental Linker Version 14.44.35222.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindGit.cmake:111 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:1884 (find_package)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:1619 (__FetchContent_populateSubbuild)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2155:EVAL:2 (__FetchContent_doPopulation)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2155 (cmake_language)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FetchContent.cmake:2394 (__FetchContent_Populate)"
-      - "CMakeLists.txt:14 (FetchContent_MakeAvailable)"
-    mode: "program"
-    variable: "GIT_EXECUTABLE"
-    description: "Git command line client"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "git.cmd"
-      - "git"
-    candidate_directories:
-      - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/"
-      - "C:/Users/33882/.trae/sdks/versions/node/current/"
-      - "C:/Program Files/PowerShell/7/"
-      - "E:/ServBay/packages/go/current/bin/"
-      - "E:/VM/bin/"
-      - "E:/ServBay/bin/"
-      - "F:/Code/Library/%APPDATA%/npm/"
-      - "F:/Code/Library/%APPDATA%/Composer/vendor/bin/"
-      - "C:/Windows/System32/config/systemprofile/.cargo/bin/"
-      - "C:/Windows/System32/config/systemprofile/go/bin/"
-      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
-      - "C:/Windows/System32/"
-      - "C:/Windows/"
-      - "C:/Windows/System32/wbem/"
-      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
-      - "C:/Windows/System32/OpenSSH/"
-      - "F:/Bandizip/"
-      - "C:/Program Files/Java/jdk-22/bin/"
-      - "C:/Program Files/Java/jdk-22/jre/bin/"
-      - "C:/Program Files/MySQL/MySQL Server 8.0/bin/"
-      - "C:/Program Files/dotnet/"
-      - "C:/Program Files/NVIDIA Corporation/NVIDIA app/NvDLISR/"
-      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
-      - "F:/SW2/apache-tomcat-10.1.34-windows-x64/apache-tomcat-10.1.34/bin/"
-      - "F:/Code/Library/\u5fae\u4fe1web\u5f00\u53d1\u8005\u5de5\u5177/dll/"
-      - "F:/Code/Library/%MAVEN/"
-      - "F:/Code/Library/HOME%/bin/"
-      - "F:/Git/cmd/"
-      - "E:/redis/"
-      - "C:/Users/33882/AppData/Local/nvm/"
-      - "C:/nvm4w/nodejs/"
-      - "C:/Program Files/Go/bin/"
-      - "E:/cursor/resources/app/bin/"
-      - "F:/Trae/bin/"
-      - "C:/Users/33882/AppData/Local/Programs/Python/Python313/Scripts/"
-      - "C:/Users/33882/AppData/Local/Programs/Python/Python313/"
-      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
-      - "C:/Users/33882/AppData/Local/Programs/Python/Python312/Scripts/"
-      - "C:/Users/33882/AppData/Local/Programs/Python/Python312/"
-      - "C:/Users/33882/AppData/Local/Microsoft/WindowsApps/"
-      - "F:/Jetbrains/IJ/IntelliJ IDEA 2024.1/bin/"
-      - "F:/Jetbrains/PY/PyCharm 2024.1/bin/"
-      - "F:/Code/Library/MinGw/ucrt64/bin/"
-      - "C:/Users/33882/AppData/Roaming/npm/"
-      - "F:/SoftWare/WebStorm 2024.1/bin/"
-      - "F:/Microsoft VS Code/bin/"
-      - "C:/Users/33882/go/bin/"
-      - "F:/Jetbrains/goland/goLand/GoLand 2025.1.4/bin/"
-      - "E:/Antigravity/bin/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/"
-      - "C:/Program Files/LibraryWeb/bin/"
-      - "C:/Program Files/LibraryWeb/sbin/"
-      - "C:/Program Files/LibraryWeb/"
-      - "C:/Users/33882/AppData/Local/Atlassian/SourceTree/git_local/bin/"
-    searched_directories:
-      - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/git.cmd.com"
-      - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/git.cmd.exe"
-      - "C:/Users/33882/.trae/sdks/workspaces/376b828b/versions/node/current/git.cmd"
-      - "C:/Users/33882/.trae/sdks/versions/node/current/git.cmd.com"
-      - "C:/Users/33882/.trae/sdks/versions/node/current/git.cmd.exe"
-      - "C:/Users/33882/.trae/sdks/versions/node/current/git.cmd"
-      - "C:/Program Files/PowerShell/7/git.cmd.com"
-      - "C:/Program Files/PowerShell/7/git.cmd.exe"
-      - "C:/Program Files/PowerShell/7/git.cmd"
-      - "E:/ServBay/packages/go/current/bin/git.cmd.com"
-      - "E:/ServBay/packages/go/current/bin/git.cmd.exe"
-      - "E:/ServBay/packages/go/current/bin/git.cmd"
-      - "E:/VM/bin/git.cmd.com"
-      - "E:/VM/bin/git.cmd.exe"
-      - "E:/VM/bin/git.cmd"
-      - "E:/ServBay/bin/git.cmd.com"
-      - "E:/ServBay/bin/git.cmd.exe"
-    found: "E:/ServBay/bin/git.cmd"
-    search_context:
-      ENV{PATH}:
-        - "c:\\\\Users\\\\33882\\\\.trae\\\\sdks\\\\workspaces\\\\376b828b\\\\versions\\\\node\\\\current"
-        - "c:\\\\Users\\\\33882\\\\.trae\\\\sdks\\\\versions\\\\node\\\\current"
-        - "C:\\Program Files\\PowerShell\\7"
-        - "E:\\ServBay\\packages\\go\\current\\bin"
-        - "c:\\Users\\33882\\.trae\\sdks\\workspaces\\376b828b\\versions\\node\\current"
-        - "c:\\Users\\33882\\.trae\\sdks\\versions\\node\\current"
-        - "E:\\VM\\bin\\"
-        - "E:\\ServBay\\bin"
-        - "E:\\ServBay\\packages\\go\\current\\bin"
-        - "%APPDATA%\\npm"
-        - "%APPDATA%\\Composer\\vendor\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\.cargo\\bin"
-        - "C:\\Windows\\system32\\config\\systemprofile\\go\\bin"
-        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "F:\\Bandizip"
-        - "C:\\Program Files\\Java\\jdk-22\\bin"
-        - "C:\\Program Files\\Java\\jdk-22\\jre\\bin"
-        - "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR"
-        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
-        - "F:\\SW2\\apache-tomcat-10.1.34-windows-x64\\apache-tomcat-10.1.34\\bin"
-        - "\u5fae\u4fe1web\u5f00\u53d1\u8005\u5de5\u5177\\dll"
-        - "%MAVEN"
-        - "HOME%\\bin"
-        - "C:\\Program Files\\PowerShell\\7\\"
-        - "F:\\Git\\cmd"
-        - "E:\\redis\\"
-        - "C:\\Users\\33882\\AppData\\Local\\nvm"
-        - "C:\\nvm4w\\nodejs"
-        - "C:\\Program Files\\Go\\bin"
-        - "E:\\cursor\\resources\\app\\bin"
-        - "f:\\Trae\\bin"
-        - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\"
-        - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python313\\"
-        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
-        - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\"
-        - "C:\\Users\\33882\\AppData\\Local\\Programs\\Python\\Python312\\"
-        - "C:\\Users\\33882\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "F:\\Jetbrains\\IJ\\IntelliJ IDEA 2024.1\\bin"
-        - "F:\\Jetbrains\\PY\\PyCharm 2024.1\\bin"
-        - "MinGw\\ucrt64\\bin"
-        - "C:\\Users\\33882\\AppData\\Roaming\\npm"
-        - "F:\\SoftWare\\WebStorm 2024.1\\bin"
-        - "F:\\Microsoft VS Code\\bin"
-        - "C:\\Users\\33882\\AppData\\Local\\nvm"
-        - "C:\\nvm4w\\nodejs"
-        - "C:\\Users\\33882\\go\\bin"
-        - "F:\\Jetbrains\\goland\\goLand\\GoLand 2025.1.4\\bin"
-        - "E:\\Antigravity\\bin"
-        - "C:\\Program Files\\CMake\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files/LibraryWeb"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files/LibraryWeb"
-...
-
----
-events:
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "build/_deps/oatpp-src/src/CMakeLists.txt:305 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-vre60e"
-      binary: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-vre60e"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: 'F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-vre60e'
-        
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_74d4c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
-        鐢熸垚鍚姩鏃堕棿涓?2025/12/18 23:09:26銆?
-        
-        鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\cmTC_74d4c.vcxproj鈥?榛樿鐩爣)銆?
-        PrepareForBuild:
-          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_74d4c.dir\\Debug\\cmTC_74d4c.tlog\\鈥濄€?
-        InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_74d4c.dir\\Debug\\cmTC_74d4c.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_74d4c.dir\\Debug\\cmTC_74d4c.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
-        ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_74d4c.dir\\Debug\\\\" /Fd"cmTC_74d4c.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\src.cxx"
-          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35222 鐗?
-          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_74d4c.dir\\Debug\\\\" /Fd"cmTC_74d4c.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\src.cxx"
-          src.cxx
-        F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\cmTC_74d4c.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\cmTC_74d4c.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
-        
-        鐢熸垚澶辫触銆?
-        
-        鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\cmTC_74d4c.vcxproj鈥?榛樿鐩爣) (1) ->
-        (ClCompile 鐩爣) -> 
-          F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\src.cxx(1,10): error C1083: 鏃犳硶鎵撳紑鍖呮嫭鏂囦欢: 鈥減thread.h鈥? No such file or directory [F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-vre60e\\cmTC_74d4c.vcxproj]
-        
-            0 涓鍛?
-            1 涓敊璇?
-        
-        宸茬敤鏃堕棿 00:00:01.21
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:238 (_threads_check_lib)"
-      - "build/_deps/oatpp-src/src/CMakeLists.txt:305 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthreads"
-    directories:
-      source: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-xmo3eh"
-      binary: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-xmo3eh"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-xmo3eh'
-        
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e68ec.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
-        鐢熸垚鍚姩鏃堕棿涓?2025/12/18 23:09:28銆?
-        
-        鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\cmTC_e68ec.vcxproj鈥?榛樿鐩爣)銆?
-        PrepareForBuild:
-          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_e68ec.dir\\Debug\\cmTC_e68ec.tlog\\鈥濄€?
-        InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_e68ec.dir\\Debug\\cmTC_e68ec.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_e68ec.dir\\Debug\\cmTC_e68ec.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
-        ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e68ec.dir\\Debug\\\\" /Fd"cmTC_e68ec.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\CheckFunctionExists.cxx"
-          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35222 鐗?
-          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_e68ec.dir\\Debug\\\\" /Fd"cmTC_e68ec.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\CheckFunctionExists.cxx"
-          CheckFunctionExists.cxx
-        Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\Debug\\cmTC_e68ec.exe" /INCREMENTAL /ILK:"cmTC_e68ec.dir\\Debug\\cmTC_e68ec.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-xmo3eh/Debug/cmTC_e68ec.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-xmo3eh/Debug/cmTC_e68ec.lib" /MACHINE:X64  /machine:x64 cmTC_e68ec.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\cmTC_e68ec.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\cmTC_e68ec.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
-        
-        鐢熸垚澶辫触銆?
-        
-        鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\cmTC_e68ec.vcxproj鈥?榛樿鐩爣) (1) ->
-        (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減threads.lib鈥?[F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xmo3eh\\cmTC_e68ec.vcxproj]
-        
-            0 涓鍛?
-            1 涓敊璇?
-        
-        宸茬敤鏃堕棿 00:00:01.17
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/CheckLibraryExists.cmake:154 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:175 (check_library_exists)"
-      - "C:/Program Files/CMake/share/cmake-4.2/Modules/FindThreads.cmake:239 (_threads_check_lib)"
-      - "build/_deps/oatpp-src/src/CMakeLists.txt:305 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthread"
-    directories:
-      source: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-8059a0"
-      binary: "F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-8059a0"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-8059a0'
-        
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5c129.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        閫傜敤浜?.NET Framework MSBuild 鐗堟湰 17.14.23+b0019275e
-        鐢熸垚鍚姩鏃堕棿涓?2025/12/18 23:09:29銆?
-        
-        鑺傜偣 1 涓婄殑椤圭洰鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\cmTC_5c129.vcxproj鈥?榛樿鐩爣)銆?
-        PrepareForBuild:
-          宸插惎鐢ㄧ粨鏋勫寲杈撳嚭銆傜紪璇戝櫒璇婃柇鐨勬牸寮忚缃皢鍙嶆槧閿欒灞傛缁撴瀯銆傛湁鍏宠缁嗕俊鎭紝璇峰弬闃?https://aka.ms/cpp/structured-output銆?
-          姝ｅ湪鍒涘缓鐩綍鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\Debug\\鈥濄€?
-          姝ｅ湪鍒涘缓鐩綍鈥渃mTC_5c129.dir\\Debug\\cmTC_5c129.tlog\\鈥濄€?
-        InitializeBuildStatus:
-          姝ｅ湪鍒涘缓鈥渃mTC_5c129.dir\\Debug\\cmTC_5c129.tlog\\unsuccessfulbuild鈥濓紝鍥犱负宸叉寚瀹氣€淎lwaysCreate鈥濄€?
-          姝ｅ湪瀵光€渃mTC_5c129.dir\\Debug\\cmTC_5c129.tlog\\unsuccessfulbuild鈥濇墽琛?Touch 浠诲姟銆?
-        ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5c129.dir\\Debug\\\\" /Fd"cmTC_5c129.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\CheckFunctionExists.cxx"
-          鐢ㄤ簬 x64 鐨?Microsoft (R) C/C++ 浼樺寲缂栬瘧鍣?19.44.35222 鐗?
-          鐗堟潈鎵€鏈?C) Microsoft Corporation銆備繚鐣欐墍鏈夋潈鍒┿€?
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_5c129.dir\\Debug\\\\" /Fd"cmTC_5c129.dir\\Debug\\vc143.pdb" /external:W1 /TP /errorReport:queue "F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\CheckFunctionExists.cxx"
-          CheckFunctionExists.cxx
-        Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\HostX64\\x64\\link.exe /OUT:"F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\Debug\\cmTC_5c129.exe" /INCREMENTAL /ILK:"cmTC_5c129.dir\\Debug\\cmTC_5c129.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-8059a0/Debug/cmTC_5c129.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"F:/Code/Library/build/CMakeFiles/CMakeScratch/TryCompile-8059a0/Debug/cmTC_5c129.lib" /MACHINE:X64  /machine:x64 cmTC_5c129.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\cmTC_5c129.vcxproj]
-        宸插畬鎴愮敓鎴愰」鐩€淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\cmTC_5c129.vcxproj鈥?榛樿鐩爣)鐨勬搷浣?- 澶辫触銆?
-        
-        鐢熸垚澶辫触銆?
-        
-        鈥淔:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\cmTC_5c129.vcxproj鈥?榛樿鐩爣) (1) ->
-        (Link 鐩爣) -> 
-          LINK : fatal error LNK1104: 鏃犳硶鎵撳紑鏂囦欢鈥減thread.lib鈥?[F:\\Code\\Library\\build\\CMakeFiles\\CMakeScratch\\TryCompile-8059a0\\cmTC_5c129.vcxproj]
-        
-            0 涓鍛?
-            1 涓敊璇?
-        
-        宸茬敤鏃堕棿 00:00:01.17
-        
-      exitCode: 1
 ...

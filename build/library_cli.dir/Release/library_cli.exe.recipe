@@ -7,9 +7,6 @@
     <ProjectOutput>
       <FullPath>F:\Code\Library\build\Release\library_cli.exe</FullPath>
     </ProjectOutput>
-    <ProjectOutput>
-      <FullPath>F:\Code\Library\build\x64\Release\ALL_BUILD</FullPath>
-    </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
   <SatelliteDlls />

@@ -1,6 +1,6 @@
 ^F:\CODE\LIBRARY\BUILD\CMAKEFILES\952CF45F08EF7559CE06F77F06F9599E\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SF:/Code/Library -BF:/Code/Library/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/Code/Library/build/LibraryWeb.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SF:/Code/Library -BF:/Code/Library/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file F:/Code/Library/build/LibraryCLI.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

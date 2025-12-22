@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <map>
 #include <vector>
@@ -49,15 +51,34 @@ class BTreeAuthor;
 
 void printBook(const Book& book);
 void clearInput();
+void clearScreen();
 string inputLine(const string& prompt);
 int inputInt(const string& prompt);
 double inputDouble(const string& prompt);
 
+// 交互式函数（命令行使用）
 void addOrAcquireBook(BTreeBook& books, BTreeAuthor& authorIndex);
 void removeBook(BTreeBook& books, BTreeAuthor& authorIndex);
 void borrowBook(BTreeBook& books);
 void returnBook(BTreeBook& books);
+void reserveBook(BTreeBook& books);
 void queryById(const BTreeBook& books);
 void queryByAuthor(const BTreeBook& books, const BTreeAuthor& authorIndex);
+void queryByTitle(const BTreeBook& books);
 void listAll(const BTreeBook& books);
+void listAllBorrowers(const BTreeBook& books);
+void listAllReservers(const BTreeBook& books);
+void viewBorrowReserveById(const BTreeBook& books);
 void showMenu();
+
+// 非交互式函数（API/Web使用，接受参数）
+bool addOrAcquireBook(BTreeBook& books, BTreeAuthor& authorIndex, const Book& book);
+bool removeBookById(BTreeBook& books, BTreeAuthor& authorIndex, const string& id);
+bool borrowBookById(BTreeBook& books, const string& id, const string& borrowerId, const string& borrowerName);
+bool returnBookById(BTreeBook& books, const string& id, const string& borrowerId);
+bool reserveBookById(BTreeBook& books, const string& id, const string& reserverId, const string& reserverName);
+Book* queryBookById(const BTreeBook& books, const string& id);
+vector<Book> queryBooksByAuthor(const BTreeBook& books, const BTreeAuthor& authorIndex, const string& author);
+vector<Book> queryBooksByTitle(const BTreeBook& books, const string& title);
+vector<Book> getAllBooks(const BTreeBook& books);
+string getTreeStructure(const BTreeBook& books);

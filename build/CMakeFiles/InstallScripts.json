@@ -1,10 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"F:/Code/Library/build/cmake_install.cmake",
-		"F:/Code/Library/build/_deps/oatpp-build/cmake_install.cmake",
-		"F:/Code/Library/build/_deps/oatpp-build/src/cmake_install.cmake",
-		"F:/Code/Library/build/_deps/oatpp-build/test/cmake_install.cmake"
+		"F:/Code/Library/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
