@@ -3,7 +3,6 @@
 #include <iostream>
 
 using namespace std;
-
 // 构造函数：初始化B树，t是最小度数（对于2-3树，t=2）
 // 2-3树意味着每个节点最多有2个键（2*t-1=3个键），最少有1个键（t-1=1个键）
 BTreeBook::BTreeBook(int t): t(t), root(nullptr) {}
