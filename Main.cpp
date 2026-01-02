@@ -2,17 +2,14 @@
 #include "library_core/btree_book.h"
 #include "library_core/btree_author.h"
 #include <iostream>
-#define WIN32_LEAN_AND_MEAN
-#include <windows.h>
-#include <io.h>
-#include <fcntl.h>
 
 using namespace std;
 
 int main() {
-    SetConsoleOutputCP(65001);  // UTF-8
-    SetConsoleCP(65001);        // UTF-8
-    system("chcp 65001 > nul");
+#ifdef _WIN32
+    // Windows 下设置 UTF-8 编码（可选）
+    system("chcp 65001 > nul 2>&1");
+#endif
     
     BTreeBook books;
     BTreeAuthor authorIndex;
