@@ -13,7 +13,6 @@ struct BorrowRecord {
     time_t borrowTime;          // 借阅时间
     time_t expectedReturnTime;  // 预期归还时间
     time_t actualReturnTime;    // 实际归还时间（0表示未归还）
-    
     BorrowRecord() : borrowTime(0), expectedReturnTime(0), actualReturnTime(0) {}
 };
 
@@ -24,7 +23,6 @@ struct ReservationRecord {
     time_t reserveTime;         // 预约时间
     time_t expectedPickupTime;  // 预期取书时间
     time_t actualPickupTime;    // 实际取书时间（0表示未取书）
-    
     ReservationRecord() : reserveTime(0), expectedPickupTime(0), actualPickupTime(0) {}
 };
 

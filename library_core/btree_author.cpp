@@ -21,7 +21,8 @@ void BTreeAuthor::destroy(BTreeAuthorNode* x) {
 // 返回第一个大于等于key的键的索引
 int BTreeAuthor::findKeyIndex(BTreeAuthorNode* x, const string& key) const {
     int i = 0;
-    while (i < (int)x->keys.size() && key > x->keys[i]) ++i;
+    while (i < (int)x->keys.size() && key > x->keys[i])// 找到第一个大于等于key的键
+     ++i;
     return i;
 }
 
